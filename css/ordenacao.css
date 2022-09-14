@@ -1,0 +1,35 @@
+#resultado{
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+#ordenar{
+    background-color: #11A478;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.6rem;
+    width: fit-content;
+}
+#ordenar:hover{
+    background-color: #18d29a;
+}
+
+.lista_ordenada{
+    max-width: 80%;
+    overflow-wrap: break-word;
+}
+
+.fade{
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+@media (max-width: 800px) {
+    .lista_ordenada{
+        max-width: 7em;
+    }
+}

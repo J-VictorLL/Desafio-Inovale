@@ -1,0 +1,112 @@
+#checkbox_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    filter: grayscale(0);
+    max-width: 90%;
+}
+#checkbox_container input{
+    opacity: 0;
+}
+
+.mark{
+    position: absolute;
+    margin: 0.4rem;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: white;
+    border-radius: 100%; 
+}
+#checkMark{
+    position: absolute;
+    margin: 0.584rem;
+    width: 1em;
+    height: 1em;
+    z-index: 1;
+    cursor: pointer;
+}
+#checkbox_container:hover input ~ #checkMark{
+    background-color: #d0d0d0;
+}
+#checkbox_container input:checked ~ #checkMark{
+    background-color: #36d313;
+}
+
+#resultado{
+    margin-top: 1em;
+}
+
+.buscar{
+    background-color: #11A478;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.6rem;
+    width: fit-content;
+}
+.buscar:hover{
+    background-color: #18d29a;
+}
+
+.resultado{
+    display: flex;
+    flex-direction:row; 
+    gap: 2em;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.mostrar{
+    justify-content: center;
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 1rem;
+}
+
+.fade2{
+    animation: fadeIn 2s ease-in-out;
+}
+.fade4{
+    animation: fadeIn 4s ease-in-out;
+}
+
+#posicao{
+    font-size: 32px;
+    letter-spacing: 0.4rem;
+    color: rgb(135, 135, 135);
+}
+
+#posicao_B{
+    font-size: 48px;
+    color: black;
+}
+
+hr{
+    margin-top: -0.2em;
+    margin-bottom: -1em;
+}
+
+
+@keyframes fadeIn{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@media (max-width: 800px) {
+    .formulario{
+        align-items: center;
+    }
+    .resultado{
+        align-items: center;
+        flex-direction:column; 
+        margin-left: 0;
+        gap: 0;
+        text-align: center;
+    }
+    .mostrar{
+        margin-left: 0;
+    }
+}

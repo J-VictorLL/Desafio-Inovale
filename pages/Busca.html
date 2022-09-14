@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/busca.css">
+    <title>Algoritmos de Ordenação</title>
+</head>
+<body>
+    <button class="voltar" onclick="location.href='../index.html'">
+        <image src="../icons/voltar.svg" alt="icone_voltar">
+        <h1>Voltar</h1>
+    </button>
+    <section class="wrapper">
+        <div class="container">
+            <form class="formulario" id="form">
+                <label for="numero_adicional">Insira os valores da lista:</label>
+                <input type="number" class="numero" id="numero_adicional" name="numero_adicional">
+                <input type="submit" id="submit" value="Adicionar">
+            </form>
+            <section class="visualizar">
+                <section>
+                    <p>lista atual:</p>
+                    <button class="apagar">Apagar</button>
+                </section>
+                <section id="lista_atual">
+                    <p class="lista_atual"></p>
+                </section>
+            </section>
+            <section id="checkbox_container">
+                <label>Usar ultima lista digitada e usada
+                    <input id="toogle" type="checkbox">
+                    <span class="mark" id="checkMark"></span>
+                    <span class="mark"></span>
+                </label>
+            </section>
+        </div>
+        <div class="container" id="resultado">
+            <form class="formulario">
+                <input type="submit" class="buscar" value="Buscar">
+                <input type="number" class="numero" id="numero_buscado" name="numero_buscado">
+            </form>
+            <section class="resultado">
+                <h1 id="encontrado"></h1>
+                <div class="mostrar">
+                    <p id="posicao"><span id="posicao_A"></span> <span id="posicao_B"></span> <span id="posicao_C"></span></p>
+                    <p id="localizacao"></p>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+<script src="../scripts/ordenação e busca.js"></script>
+</html>
